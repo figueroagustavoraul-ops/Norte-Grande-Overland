@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizá tu Usado | Peritaje Digital NG Overland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NG<span>Overland</span></a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Stock Completo</a>
+                <a href="cotizar.html" class="active">Cotizá tu Usado</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="grid-contacto" style="grid-template-columns: 1fr 1.2fr;">
+            <div>
+                <span class="sub-title">Peritaje Digital Express</span>
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Tomamos tu vehículo actual</h2>
+                <p style="color: var(--text-muted); line-height: 1.6;">Ingresá detalladamente los datos de tu vehículo mecánico. Nuestro departamento comercial cruzará la información con las bases de cotización de la plaza automotor de Salta para ofrecerte el mejor valor de recambio de forma inmediata.</p>
+            </div>
+            
+            <form class="form-contacto" onsubmit="event.preventDefault(); alert('¡Formulario recibido! Un evaluador de stock se comunicará por WhatsApp.');">
+                <h3 style="margin-bottom:1.5rem; color:#fff;">Formulario de Inspección Inicial</h3>
+                <input type="text" placeholder="Marca y Modelo (Ej: Ranger XLT)" required class="input-field">
+                <div style="display:flex; gap:1rem;">
+                    <input type="number" placeholder="Año" required class="input-field">
+                    <input type="number" placeholder="Kilómetros" required class="input-field">
+                </div>
+                <select class="input-field" style="background-color: rgba(0,0,0,0.3); color: var(--text-muted);">
+                    <option>Estado General: Excelente</option>
+                    <option>Estado General: Bueno (Detalles lógicos de uso)</option>
+                    <option>Estado General: Regular</option>
+                </select>
+                <input type="tel" placeholder="Tu número de WhatsApp corporativo o personal" required class="input-field">
+                <button type="submit" class="btn btn-accent" style="width: 100%;">Enviar para Tasación Online</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer"><div class="container"><p>&copy; 2026 Norte Grande Overland.</p></div></footer>
+</body>
+</html>

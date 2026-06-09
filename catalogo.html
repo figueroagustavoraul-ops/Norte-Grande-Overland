@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | Norte Grande Overland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NG<span>Overland</span></a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html" class="active">Stock Completo</a>
+                <a href="cotizar.html">Cotizá tu Usado</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="section-header">
+            <span class="sub-title">Showroom Virtual</span>
+            <h2 class="section-title">Unidades Listas para Retiro</h2>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Filtrado inteligente en tiempo real.</p>
+        </div>
+
+        <!-- Módulo de Filtros 100% Funcional -->
+        <div class="filter-wrapper">
+            <div class="filter-box">
+                <div class="filter-group">
+                    <label>Tipo de Vehículo</label>
+                    <select id="filtro-categoria" class="input-field-sm" style="margin-bottom:0;">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="pickup">Pick-Ups 4x4</option>
+                        <option value="suv">SUVs Premium</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Condición</label>
+                    <select id="filtro-condicion" class="input-field-sm" style="margin-bottom:0;">
+                        <option value="todos">Todos</option>
+                        <option value="0km">0KM Entrega Inmediata</option>
+                        <option value="usado">Usados Seleccionados</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Precios</label>
+                    <select id="filtro-precio" class="input-field-sm" style="margin-bottom:0;">
+                        <option value="todos">Todos los valores</option>
+                        <option value="bajo">Hasta $50.000.000 ARS</option>
+                        <option value="alto">Más de $50.000.000 ARS</option>
+                    </select>
+                </div>
+                <button id="btn-limpiar" class="btn btn-outline-light" style="padding:0.6rem 1.2rem;">Limpiar</button>
+            </div>
+        </div>
+
+        <!-- Mensaje de Alerta si no hay resultados -->
+        <div id="sin-resultados" style="display: none; text-align: center; padding: 3rem; color: var(--text-muted);">
+            <h3>⚠️ No se encontraron unidades con esos filtros exactos.</h3>
+            <p>Intentá cambiando las opciones seleccionadas.</p>
+        </div>
+
+        <!-- Grilla de Vehículos -->
+        <div class="grid-autos" id="contenedor-stock" style="margin-top: 3rem;">
+            
+            <!-- Unidad 1: Hilux -->
+            <article class="card-auto" data-categoria="pickup" data-condicion="0km" data-precio="bajo">
+                <div class="tag-status entrega-inmediata">0KM - Stock Físico</div>
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" class="auto-img">
+                </div>
+                <div class="card-auto-body">
+                    <span class="categoria">Pick-Up 4x4</span>
+                    <h3>Toyota Hilux SRX 2.8 TDI</h3>
+                    <div class="precio-auto">$ 49.500.000 <span class="moneda-ref">ARS</span></div>
+                    <p class="descripcion-corta">Mecánica irrompible para terrenos exigentes. Control de tracción activo y pack de asistencias avanzadas.</p>
+                    <a href="auto-hilux.html" class="btn-ver-mas">Ficha Completa y Reserva →</a>
+                </div>
+            </article>
+
+            <!-- Unidad 2: SW4 -->
+            <article class="card-auto" data-categoria="suv" data-condicion="usado" data-precio="alto">
+                <div class="tag-status usado-certified" style="background:#3b82f6;">Usado Seleccionado</div>
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" class="auto-img">
+                </div>
+                <div class="card-auto-body">
+                    <span class="categoria">SUV Luxury / 7 Asientos</span>
+                    <h3>Toyota SW4 Diamond 4x4</h3>
+                    <div class="precio-auto">$ 62.000.000 <span class="moneda-ref">ARS</span></div>
+                    <p class="descripcion-corta">Máximo confort ejecutivo. Año 2024, solo 18.000 km, service oficial certificado y tapizado premium.</p>
+                    <a href="auto-sw4.html" class="btn-ver-mas">Ficha Completa y Reserva →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer"><div class="container"><p>&copy; 2026 Norte Grande Overland.</p></div></footer>
+
+    <!-- Inyección del Script de Filtro Real -->
+    <script src="script-filtros.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norte Grande Overland | Concesionaria Premium 4x4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <span>⛰️ Especialistas en Pick-Ups, 4x4 y Alta Gama en el NOA</span>
+            <span>📍 Showroom Central: Av. Reyes Católicos, Salta Capital</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NG<span>Overland</span></a>
+            <nav class="menu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Stock Completo</a>
+                <a href="cotizar.html">Cotizá tu Usado</a>
+            </nav>
+            <a href="catalogo.html" class="btn btn-accent">Ver Unidades</a>
+        </div>
+    </header>
+
+    <section class="hero-autos">
+        <div class="hero-content">
+            <span class="badge-premium">Ecosistema Digital 2026</span>
+            <h1>Dominá cualquier terreno <br><span class="text-gradient">Con total distinción</span></h1>
+            <p>La selección más rigurosa de Pick-Ups 0KM y SUVs premium seleccionadas en Salta. Financiación corporativa, tasa prendaria exclusiva y reserva online segura.</p>
+            <div class="hero-buttons">
+                <a href="catalogo.html" class="btn btn-accent">Explorar Catálogo</a>
+                <a href="cotizar.html" class="btn btn-outline-light">Cotizar Mi Auto</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="section-header">
+            <span class="sub-title">Modelos Destacados</span>
+            <h2 class="section-title">Nuestras Unidades Insignia</h2>
+        </div>
+
+        <div class="grid-autos">
+            <article class="card-auto">
+                <div class="tag-status entrega-inmediata">0KM - Stock Físico</div>
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Toyota Hilux" class="auto-img">
+                </div>
+                <div class="card-auto-body">
+                    <span class="categoria">Pick-Up 4x4</span>
+                    <h3>Toyota Hilux SRX 2.8 TDI</h3>
+                    <div class="precio-auto">$ 49.500.000 <span class="moneda-ref">ARS</span></div>
+                    <p class="descripcion-corta">Máxima fiabilidad para los caminos del norte. Audio Premium JBL, control de tracción activo, y pack de asistencias de seguridad avanzada.</p>
+                    <a href="auto-hilux.html" class="btn-ver-mas">Ficha Completa y Reserva →</a>
+                </div>
+            </article>
+
+            <article class="card-auto">
+                <div class="tag-status usado-certificado">Usado Seleccionado</div>
+                <div class="img-zoom-container">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Toyota SW4" class="auto-img">
+                </div>
+                <div class="card-auto-body">
+                    <span class="categoria">SUV Luxury / 7 Asientos</span>
+                    <h3>Toyota SW4 Diamond 4x4</h3>
+                    <div class="precio-auto">$ 62.000.000 <span class="moneda-ref">ARS</span></div>
+                    <p class="descripcion-corta">Confort ejecutivo sin límites de terreno. Año 2024, solo 18.000 km, service oficial en concesionario certificado, tapizados bitono.</p>
+                    <a href="auto-sw4.html" class="btn-ver-mas">Ficha Completa y Reserva →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Norte Grande Overland. Desarrollo multipágina integrado por Gustavo Figueroa.</p>
+        </div>
+    </footer>
+
+    <div class="chatbot-wrapper">
+        <div class="chatbot-btn" onclick="toggleChat()"><span class="chat-icon">💬</span></div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div><h4>Asesor Corporativo NG</h4><span class="status-online">● Online</span></div>
+                <button class="close-chat" onclick="toggleChat()">×</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="mensaje bot">¡Hola! Bienvenido a la plataforma inteligente de Norte Grande Overland. ¿Te interesa alguna unidad o querés tasar tu usado actual?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Consultar stock, cuotas o reservas..." onkeypress="if(event.key === 'Enter') enviarMensaje()">
+                <button onclick="enviarMensaje()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-bot.js"></script>
+</body>
+</html>

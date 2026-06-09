@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Hilux SRX | Ficha Técnica e Inversión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NG<span>Overland</span></a>
+            <a href="catalogo.html" class="btn btn-outline-light">← Volver al Catálogo</a>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="detalle-auto-container">
+            <div>
+                <div class="visor-principal">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80">
+                </div>
+                
+                <div class="fintech-gateway-box">
+                    <div class="gateway-header">
+                        <h4>🔒 Pasarela de Reserva Digital</h4>
+                        <p>Valor de la Seña Requerida: <strong>$ 500.000 ARS</strong></p>
+                    </div>
+                    <div class="form-group-row" style="margin-top:1.5rem;">
+                        <input type="text" placeholder="Número de Tarjeta" class="input-field-sm">
+                    </div>
+                    <div style="display:flex; gap:1rem;">
+                        <input type="text" placeholder="Vencimiento MM/AA" class="input-field-sm">
+                        <input type="text" placeholder="Código Seguridad" class="input-field-sm">
+                    </div>
+                    <button class="btn btn-accent btn-block" onclick="alert('Transacción Segura de Prueba procesada por NG Overland.')">Abonar Seña de Reserva</button>
+                </div>
+            </div>
+
+            <div class="info-bloque">
+                <span class="badge-modelo">0KM - DISPONIBILIDAD INMEDIATA</span>
+                <h1>Toyota Hilux SRX 2.8 TDI 4x4</h1>
+                <div class="precio-tag">$ 49.500.000 <span style="font-size:1rem; font-weight:400; color:var(--text-muted);">ARS</span></div>
+                
+                <div class="especificaciones-tecnicas">
+                    <h3>Atributos del Vehículo</h3>
+                    <ul>
+                        <li><strong>Motorización:</strong> Turbodiésel 2.8L (204 CV y 500 Nm).</li>
+                        <li><strong>Transmisión:</strong> Automática de 6 relaciones con reductora 4x4.</li>
+                        <li><strong>Equipamiento:</strong> Faros Bi-LED, llantas de aleación de 18", pantalla táctil de 9".</li>
+                    </ul>
+                </div>
+
+                <div class="box-credito">
+                    <h4>Simular Crédito Prendario</h4>
+                    <p>Calculadora instantánea basada en cuotas mensuales fijas en pesos:</p>
+                    <div class="calculadora-inputs">
+                        <button class="btn-plan" onclick="document.getElementById('calc-res').innerText = '24 Cuotas Fijas de $ 1.950.000 ARS al mes (Tasa Preferencial)'">Financiar 40%</button>
+                        <button class="btn-plan" onclick="document.getElementById('calc-res').innerText = '24 Cuotas Fijas de $ 2.800.000 ARS al mes (Tasa Preferencial)'">Financiar 60%</button>
+                    </div>
+                    <div class="resultado-cuotas" id="calc-res">Hacé clic en una de las opciones comerciales de arriba.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
